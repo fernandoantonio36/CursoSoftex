@@ -1,2 +1,2 @@
 # CursoSoftex
-Exercícios realizados no curso promovido pela Softex Recife
+Exercícios realizados no curso promovido pela Softex Recife de Desenvolvedor BackEnd
