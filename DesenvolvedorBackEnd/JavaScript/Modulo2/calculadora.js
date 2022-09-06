@@ -1,24 +1,37 @@
-const readline = require('readline-sync');
-function calculaNota(){
-    
-    var alunos = 0;
-    var maiorMediaAluno ="";
-    var maiorMedia = 0;
-    while(alunos<4){
-        var aluno = readline.question('Digite o nome do aluno');
-        var nota1 = readline.questionInt('Nota 1:');
-        var nota2 = readline.questionInt('Nota 2:');
-        alunos++;
-        media = (nota1+nota2)/2;
-        if(media>maiorMedia) {
-            maiorMedia = media;
-            maiorMediaAluno = aluno;
-        }
-    }
-    console.log('O aluno que obteve a maior nota foi:\n')
-    console.log(maiorMediaAluno)
-    console.log('\nSua nota foi:\n')
-    console.log(maiorMedia)
+
+
+function start() {
+  createBoard();
+  operacoes();
 }
 
-calculaNota();
+
+
+function operacoes() {
+  somar();
+  subtrair();
+  multiplicar();
+  dividir();
+}
+
+function somar(operando1, operando2) {
+  return operando1 + operando2;
+}
+
+function subtrair(operando1, operando2) {
+  return operando1 - operando2;
+}
+
+function multiplicar(operando1, operando2) {
+  return operando1 * operando2;
+}
+
+function dividir(operando1, operando2) {
+  return operando1 / operando2;
+}
+
+function potencia(operando1, operando2) {
+  return operando1 ** operando2;
+}
+
+start();
